@@ -1,0 +1,157 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set font and background color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Style header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style main content */
+main {
+  padding: 20px;
+}
+
+
+
+/* Style about section */
+#about {
+  margin-bottom: 20px;
+}
+
+#about article {
+  text-align: center;
+}
+
+#about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* Style work section */
+#work {
+  margin-bottom: 20px;
+  display: flex;
+
+}
+
+#work h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-right: 25px;
+  padding-right: 10px;
+  border-right: 2px solid grey;
+}
+
+/* #work article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+   */
+/* #work a {
+    flex: 0 0 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+  }
+   */
+.imgMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#bigImg {
+  width: 750px;
+  height: 500px;
+}
+
+.smallImg {
+  width: 325px;
+  height: 300px;
+}
+
+.smallSec {
+  display: flex;
+}
+
+/* Style contact section */
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact label {
+  margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#contact button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add responsive styles */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  #work a {
+    flex: 0 0 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  #work a {
+    flex: 0 0 100%;
+  }
+}

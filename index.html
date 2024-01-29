@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title><!-- The title element -->
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Clayton Andrews</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h3>Some Text</h3>
+  </header>
+
+  <main>
+    <section id="about">
+      <article>
+        <figure>
+          <img src="avatar.jpg" alt="Developer's Photo">
+          <figcaption>About the developer</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section id="work">
+      <h2>Work</h2>
+      <div class="imgMain">
+        <a href="#">
+          <figure>
+            <img id="bigImg"
+              src="https://static.vecteezy.com/system/resources/previews/000/689/528/original/shiny-blue-gift-box-opening-vector.jpg"
+              alt="Application 1">
+            <figcaption>Application 1</figcaption>
+          </figure>
+        </a>
+        <div class="smallSec">
+          <a href="#">
+            <figure>
+              <img class="smallImg" src="https://www.downloadclipart.net/svg/35316-blue-box-vector.svg"
+                alt="Application 2">
+              <figcaption>Application 2</figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure>
+              <img class="smallImg" src="https://www.downloadclipart.net/svg/35316-blue-box-vector.svg"
+                alt="Application 2">
+              <figcaption>Application 3</figcaption>
+            </figure>
+          </a>
+          <!-- Add more applications here -->
+        </div>
+        <div class="smallSec">
+          <a href="#">
+            <figure>
+              <img class="smallImg" src="https://www.downloadclipart.net/svg/35316-blue-box-vector.svg"
+                alt="Application 2">
+              <figcaption>Application 2</figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure>
+              <img class="smallImg" src="https://www.downloadclipart.net/svg/35316-blue-box-vector.svg"
+                alt="Application 2">
+              <figcaption>Application 3</figcaption>
+            </figure>
+          </a>
+          <!-- Add more applications here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <article>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
